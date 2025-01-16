@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Recipe App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple Recipe application that allows users to create and view recipes. This application consists of both a frontend built with React.js
+and a backend API built with ASP.NET Core. Users can add new recipes, including the title, ingredients, instructions, and a photo, and view a list of recipes.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Create Recipe**: Users can submit new recipes with title, ingredients (comma-separated), instructions, and photo.
+- **View Recipes**: Displays a list of recipes with their title and image on the homepage.
+- **Recipe Details**: Users can click on any recipe to view more details including ingredients, instructions, and a full-size photo.
+- **Contact Page**: A page with contact information, including email, phone, and address.
 
-### `yarn start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: 
+  - React.js
+  - React Router for navigation
+  - Axios for HTTP requests
+  - File handling for photo uploads (base64)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Backend**: 
+  - ASP.NET Core API
+  - MongoDB for storing recipe data
+  - REST API to handle recipes CRUD operations
 
-### `yarn test`
+## Setup Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `yarn build`
+Make sure you have the following installed on your machine:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Node.js](https://nodejs.org/)
+- [ASP.NET Core SDK](https://dotnet.microsoft.com/download)
+- [MongoDB](https://www.mongodb.com/try/download/community)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend Setup (React)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository
+2. Install the required dependencies (npm install)
+3. Start the development server (npm start / yarn start)
+The app will be available at http://localhost:3000
 
-### `yarn eject`
+### Backend Setup (ASP.NET Core)
+1. Open and run from Visual Studio
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### MongoDB Setup
+1. Install MongoDB on your machine or use a cloud service like MongoDB Atlas.
+2. Ensure that your MongoDB instance is running and properly configured.
+3. Update the appsettings.json file (in the ASP.NET Core project) with the correct MongoDB connection string.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Frontend Pages
+- HomePage: Displays a list of recipes.
+- RecipeDetailsPage: Displays details of a specific recipe.
+- CreateRecipePage: Allows users to create new recipes.
+- ContactPage: A page with contact information.
