@@ -40,7 +40,7 @@ Make sure you have the following installed on your machine:
 3. Start the development server (npm start / yarn start)
 The app will be available at http://localhost:3000
 
-### Backend Setup (ASP.NET Core)
+### Backend Setup (ASP.NET Core) - (https://github.com/Grigoras-Andreea/DAW-backend)
 1. Open and run from Visual Studio
 
 ### MongoDB Setup
